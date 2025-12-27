@@ -18,8 +18,17 @@
 <label>Stop Loss (pips)</label>
 <input type="number" id="sl">
 
-<label>Pip Value</label>
-<input type="number" id="pip">
+<label>Currency Pair</label>
+<select id="pair" onchange="setPipValue()">
+  <option value="">Select Pair</option>
+  <option value="EURUSD">EURUSD</option>
+  <option value="GBPUSD">GBPUSD</option>
+  <option value="USDJPY">USDJPY</option>
+  <option value="XAUUSD">XAUUSD (Gold)</option>
+</select>
+
+<p id="pipDisplay"></p>
+
 
 <button onclick="calculateLot()">Calculate Lot</button>
 
